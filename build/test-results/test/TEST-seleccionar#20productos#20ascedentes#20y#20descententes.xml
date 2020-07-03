@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="seleccionar productos ascedentes y descententes" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-07-02T23:53:05" hostname="QVT1MDEWIN12" time="10.834">
+  <properties/>
+  <testcase name="Productos descendentes" classname="seleccionar productos ascedentes y descententes" time="10.834">
+    <failure message="java.lang.UnsupportedOperationException: The of() method is not supported for By-type Targets" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: The of() method is not supported for By-type Targets
+	at net.serenitybdd.screenplay.targets.ByTarget.of(ByTarget.java:67)
+	at net.serenitybdd.screenplay.targets.ByTarget.of(ByTarget.java:15)
+	at com.co.omni.web.task.BusquedaProducto.performAs(BusquedaProducto.java:28)
+	at com.co.omni.web.task.BusquedaProducto$$EnhancerByCGLIB$$2f840ad3.CGLIB$performAs$0(&lt;generated&gt;)
+	at com.co.omni.web.task.BusquedaProducto$$EnhancerByCGLIB$$2f840ad3$$FastClassByCGLIB$$cee5a709.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:461)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:446)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:421)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:176)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:163)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
+	at com.co.omni.web.task.BusquedaProducto$$EnhancerByCGLIB$$2f840ad3.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.co.omni.web.stepdefinitions.ProductosAmazonStepDefinitions.busqueLaPalabra(ProductosAmazonStepDefinitions.java:29)
+	at ✽.busque la palabra zapato(src/test/resources/productosamazon.feature:11)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Dado que ingreso al portal web
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Duban inicio web
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Duban opens the https://www.amazon.com/
+jul 02, 2020 6:53:05 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 10009
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jul 02, 2020 6:53:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Cuando busque la palabra zapato
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP {} Dar click en el producto
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP ERROR: java.lang.UnsupportedOperationException: The of() method is not supported for By-type Targets?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP ERROR: java.lang.UnsupportedOperationException: The of() method is not supported for By-type Targets?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Entonces imprimo los productos de adidas de forma descendente
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[33mIGNORING STEP?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP ERROR: java.lang.UnsupportedOperationException: The of() method is not supported for By-type Targets?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Productos descendentes
+---------------------------------------------------------------------?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP {} Dar click en el producto?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - The of() method is not supported for By-type Targets
+]]></system-err>
+</testsuite>
